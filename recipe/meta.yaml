@@ -1,5 +1,5 @@
 {% set name = "unicorn-binance-websocket-api" %}
-{% set version = "2.12.2" %}
+{% set version = "2.13.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unicorn_binance_websocket_api-{{ version }}.tar.gz
-  sha256: f6cd74c671dbaac83d29d0d1024a6cbab7150c43f3f8ee898877569150b406bf
+  sha256: 11715eb62574609558153271628d646180b42693050e72fbc2b4ad1545160255
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -35,8 +35,8 @@ requirements:
     - orjson
     - psutil
     - pysocks
-    - unicorn-fy >=0.15.0
-    - unicorn-binance-rest-api >=2.7.0
+    - unicorn-fy >=0.17.2
+    - unicorn-binance-rest-api >=2.11.0
     - typing_extensions
 
 test:
