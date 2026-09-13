@@ -1,5 +1,5 @@
 {% set name = "unicorn-binance-websocket-api" %}
-{% set version = "2.15.2" %}
+{% set version = "2.16.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unicorn_binance_websocket_api-{{ version }}.tar.gz
-  sha256: 6a61db60dd73ea95d8f10d3ca6bb98609847dcef2cf31b46264b4b7a4e3d0e90
+  sha256: 34243ffde514e29d1fc1585c132e7f87eab5705182da7ef47855e05a81f04238
 
 build:
   number: 0
@@ -31,10 +31,10 @@ requirements:
     - colorama
     - requests >=2.31.0
     - websocket-client
-    - websockets >=14.0
+    - websockets >=15.0
     - orjson
     - psutil
-    - pysocks
+    - python-socks >=2.0.0
     - unicorn-fy >=0.17.2
     - unicorn-binance-rest-api >=2.12.0
     - typing_extensions
